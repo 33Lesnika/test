@@ -1,11 +1,12 @@
+#include <iostream>
 #include <string>
+
 
 class Message
 {
+	std::string message;
 	public:
 		Message(std::string& message);
-		std::string getMessage() const;
+		std::string getMessage();
 		~Message();
-	private:
-		std::string message;
 };
